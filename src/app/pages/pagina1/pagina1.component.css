@@ -1,0 +1,50 @@
+:host {
+  display: block;
+  background: url("../../../../public/1.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 210vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6em;
+  text-shadow: 2px 2px 10px rgba(175, 23, 235, 0.9);
+  text-align: center;
+  white-space: pre-line;
+}
+
+.subtitle {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgba(52, 156, 241, 0.7);
+}
+
+.boton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background: #972bc2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out; /* Suaviza la transición al hacer hover */
+}
+
+/* Efecto de animación en el hover del botón */
+.boton:hover {
+  background-color: #7a1da2; /* Cambio de color al pasar el mouse */
+  transform: scale(1.1); /* Aumenta el tamaño del botón */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra en el hover */
+}
