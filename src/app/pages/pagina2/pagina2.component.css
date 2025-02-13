@@ -61,12 +61,14 @@ h1 {
 
 /* Burbujas decorativas para el efecto de nube */
 .cloud::before, .cloud::after {
-    content: "";
+    content: "💚";
     position: absolute;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
+    animation: bubblePop 3s ease-out infinite;
 }
 
+/* Primer burbuja */
 .cloud::before {
     width: 40px;
     height: 40px;
@@ -74,11 +76,39 @@ h1 {
     left: 20px;
 }
 
+/* Segunda burbuja */
 .cloud::after {
     width: 30px;
     height: 30px;
     bottom: -15px;
     right: 25px;
+}
+
+@keyframes bubblePop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.5); /* Aumenta el tamaño de la burbuja */
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(2); /* Burbuja más grande */
+        opacity: 0;
+    }
+    75% {
+        transform: scale(1.5); /* Vuelve a ser más grande, pero no tan grande */
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1); /* Regresa a su tamaño original */
+        opacity: 1;
+    }
+}
+
+.cloud:hover::before, .cloud:hover::after, .cloud:hover .bubble1, .cloud:hover .bubble2, .cloud:hover .bubble3 {
+    animation: bubblePop 5s ease-out forwards;
 }
 
 /* Diseño de los botones */

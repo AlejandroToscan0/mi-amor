@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -12,13 +11,6 @@ import { RouterModule } from '@angular/router';
 })
 
 export class Pagina2Component {
-  title = 'mi-amor';
-  
-    constructor(private router: Router) {}
-  
-    irPagina2() {
-      this.router.navigate(['/pagina2']);
-    }
 
 }
 

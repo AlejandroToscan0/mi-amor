@@ -1,10 +1,49 @@
 :host {
-    display: block;
-    background: url("../../../../public/7.png") no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    width: 210vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: block;
+  background: url("../../../../public/7.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 210vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagina1-container {
+  color: white;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.back-button i {
+  margin-right: 1px; /* Espacio entre la flecha y el texto */
+}
+
+/* Efecto hover */
+.back-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);
+  background-color: rgba(178, 77, 187, 0.8);
+}
