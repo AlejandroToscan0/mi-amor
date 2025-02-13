@@ -1,0 +1,10 @@
+:host {
+    display: block;
+    background: url("../../../../public/7.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 210vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

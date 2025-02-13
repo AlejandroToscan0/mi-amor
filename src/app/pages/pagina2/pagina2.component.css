@@ -9,6 +9,13 @@
     align-items: center;
 }
 
+h1 {
+    font-size: 5em;
+    text-shadow: 2px 2px 10px rgba(151, 23, 202, 0.692);
+    text-align: center;
+    white-space: pre-line;
+  }
+
 .pagina1-container {
     color: white;
     text-align: center;
@@ -24,9 +31,9 @@
 /* Ajuste para la cuadrícula de botones */
 .clouds-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Mantiene 3 columnas */
-    gap: 30px; /* Reduce el espacio entre botones */
-    padding: 20px; /* Reduce el padding para evitar que el diseño se rompa */
+    grid-template-columns: repeat(2, 1fr); /* Mantiene 3 columnas */
+    gap: 50px; /* Reduce el espacio entre botones */
+    padding: 50px; /* Reduce el padding para evitar que el diseño se rompa */
 }
 
 /* Nubes y botones dentro de la cuadrícula */
@@ -91,7 +98,43 @@
 
 /* Efecto de hover en los botones */
 .btn-cloud:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0);
     color: #000;
     transform: scale(1.05);
+}
+
+/* Contenedor del botón en la parte inferior */
+.back-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilo para el botón de regreso */
+.back-button {
+    background: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.back-button i {
+    margin-right: 1px; /* Espacio entre la flecha y el texto */
+}
+
+/* Efecto hover */
+.back-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);
+    background-color: rgba(178, 77, 187, 0.8);
 }

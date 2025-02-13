@@ -19,5 +19,6 @@ export class Pagina2Component {
     irPagina2() {
       this.router.navigate(['/pagina2']);
     }
+
 }
 
