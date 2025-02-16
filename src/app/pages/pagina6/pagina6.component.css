@@ -3,17 +3,25 @@
   background: url("../../../../public/8.png") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
-  width: 210vh;
+  width: 100vw; /* Asegura que ocupe el ancho completo de la ventana */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 10px rgba(192, 84, 235, 0.692);
+  text-align: center;
+  white-space: pre-line;
+  color: white;
 }
 
 .pagina1-container {
   color: white;
   text-align: center;
   font-family: "Indie Flower", cursive;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +29,68 @@
   gap: 20px;
 }
 
+.scroll-box {
+  background: rgba(255, 255, 255, 0.25); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Difuminación */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px;
+  width: 60%; /* Ancho del cuadro */
+  max-height: 68vh; /* Altura máxima del cuadro */
+  overflow-y: auto; /* Desplazamiento vertical */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.scroll-box h2 {
+  font-size: 5em; /* Tamaño grande para el título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+  color: rgb(155, 39, 170); /* Color del texto */
+  text-align: center; /* Centrar el título */
+}
+
+.scroll-box ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-box li {
+  font-size: 1.5em; /* Tamaño de fuente para los elementos de la lista */
+  color: rgb(255, 255, 255); /* Color del texto */
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+  padding: 10px; /* Padding interno para cada elemento */
+  background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para cada elemento */
+  border-radius: 5px; /* Bordes redondeados para cada elemento */
+}
+
+/* Personalización de la barra de desplazamiento */
+.scroll-box::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Fondo de la pista */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); /* Color del pulgar */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5); /* Color del pulgar al pasar el mouse */
+}
+
+.back-button-container {
+  margin-top: auto;
+  margin-bottom: 20px;
+  display: flex; /* Hace que los botones estén en línea */
+  gap: 10px; /* Espacio entre los botones */
+  justify-content: center; /* Centra los botones horizontalmente */
+}
+
 .back-button {
-  background: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+  background: rgba(255, 255, 255, 0.6);
   border: none;
   color: rgb(0, 0, 0);
   font-size: 1.5em;
@@ -34,14 +102,12 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
-  text-align: center;
 }
 
 .back-button i {
-  margin-right: 1px; /* Espacio entre la flecha y el texto */
+  margin-right: 1px;
 }
 
-/* Efecto hover */
 .back-button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);

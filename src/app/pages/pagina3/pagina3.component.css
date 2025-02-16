@@ -21,7 +21,7 @@ h1 {
   color: white;
   text-align: center;
   font-family: "Indie Flower", cursive;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,8 +58,16 @@ h1 {
   }
 }
 
+.back-button-container {
+  margin-top: auto;
+  margin-bottom: 20px;
+  display: flex; /* Hace que los botones estén en línea */
+  gap: 10px; /* Espacio entre los botones */
+  justify-content: center; /* Centra los botones horizontalmente */
+}
+
 .back-button {
-  background: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+  background: rgba(255, 255, 255, 0.6);
   border: none;
   color: rgb(0, 0, 0);
   font-size: 1.5em;
@@ -71,14 +79,12 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
-  text-align: center;
 }
 
 .back-button i {
-  margin-right: 1px; /* Espacio entre la flecha y el texto */
+  margin-right: 1px;
 }
 
-/* Efecto hover */
 .back-button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);

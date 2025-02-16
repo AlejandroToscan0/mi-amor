@@ -3,12 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-pagina6',
-  standalone: true,
+  selector: 'app-pagina11',
   imports: [CommonModule, RouterModule],
-  templateUrl: './pagina6.component.html',
-  styleUrl: './pagina6.component.css'
+  templateUrl: './pagina11.component.html',
+  styleUrl: './pagina11.component.css'
 })
-export class Pagina6Component {
+export class Pagina11Component {
 
 }

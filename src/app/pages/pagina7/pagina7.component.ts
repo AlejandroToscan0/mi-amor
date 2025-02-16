@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-pagina7',
+  standalone: true,
   imports: [CommonModule,RouterModule],
   templateUrl: './pagina7.component.html',
   styleUrl: './pagina7.component.css'
