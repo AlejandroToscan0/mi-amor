@@ -11,6 +11,7 @@ import { Pagina8Component } from './pages/pagina8/pagina8.component';
 import { Pagina9Component } from './pages/pagina9/pagina9.component';
 import { Pagina10Component } from './pages/pagina10/pagina10.component';
 import { Pagina11Component } from './pages/pagina11/pagina11.component';
+import { Pagina12Component } from './pages/pagina12/pagina12.component';
 
 export const routes: Routes = [
   { path: '', component: Pagina1Component },  // AppComponent es la página de inicio
@@ -25,6 +26,7 @@ export const routes: Routes = [
   { path: 'pagina9', component: Pagina9Component },
   { path: 'pagina10', component: Pagina10Component },
   { path: 'pagina11', component: Pagina11Component },
+  { path: 'pagina12', component: Pagina12Component },
 ];
 
 @NgModule({

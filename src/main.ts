@@ -12,6 +12,7 @@ import { Pagina8Component } from './app/pages/pagina8/pagina8.component';
 import { Pagina9Component } from './app/pages/pagina9/pagina9.component';
 import { Pagina10Component } from './app/pages/pagina10/pagina10.component';
 import { Pagina11Component } from './app/pages/pagina11/pagina11.component';
+import { Pagina12Component } from './app/pages/pagina12/pagina12.component';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -28,6 +29,7 @@ bootstrapApplication(AppComponent, {
       { path: 'pagina9', component: Pagina9Component },
       { path: 'pagina10', component: Pagina10Component },
       { path: 'pagina11', component: Pagina11Component },
+      { path: 'pagina12', component: Pagina12Component },
     ])
   ]
 }).catch(err => console.error(err));

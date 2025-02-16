@@ -20,6 +20,10 @@ export class AppComponent {
     this.router.navigate(['/pagina1']);
   }
 
+  irPagina12() {
+    this.router.navigate(['/pagina12']);
+  }
+
   // Método para ocultar los botones cuando se está en otra página
   estaEnPaginaPrincipal(): boolean {
     return this.router.url === '/';
