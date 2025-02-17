@@ -69,3 +69,53 @@
     box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);
     background-color: rgba(178, 77, 187, 0.8);
   }
+
+@media (max-width: 1366px) {
+  .contenedor {
+      padding: 30px; 
+      width: 90%; 
+      max-width: 500px; 
+  }
+
+  h1 {
+      font-size: 2rem; 
+  }
+
+  .pagina1-container {
+    gap: 1px;
+  }
+
+  .justificado {
+    max-width: 900px;
+    font-size: 1em; 
+  }
+  
+  .back-button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 360px) {
+  .contenedor {
+    padding: 30px; 
+    width: 90%; 
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.pagina1-container {
+  gap: 1px;
+}
+
+.justificado {
+  max-width: 900px;
+  font-size: 1em; 
+}
+
+.back-button {
+  font-size: 1em;
+}
+}

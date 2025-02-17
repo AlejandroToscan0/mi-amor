@@ -69,3 +69,99 @@ h1 {
   box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);
   background-color: rgba(178, 77, 187, 0.8);
 }
+
+/* Media Queries para computadoras de 14 pulgadas (1366x768) */
+@media (max-width: 1366px) {
+  .contenedor {
+      padding: 30px; /* Reducir el padding */
+      width: 90%; /* Aumentar el ancho del contenedor */
+      max-width: 600px; /* Aumentar el ancho máximo */
+  }
+
+  h1 {
+      font-size: 2rem; /* Reducir el tamaño del título */
+  }
+
+  .boton {
+      padding: 10px 25px; /* Reducir el padding de los botones */
+      font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+  }
+
+  .pagina1-container {
+    color: white;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .justificado {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 1000px;
+    font-size: 1em; 
+    font-family: "Latin Modern Roman";
+    font-style: italic;
+  }
+
+  .back-button-container {
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex; /* Hace que los botones estén en línea */
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+  }
+  
+  .back-button {
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .back-button i {
+    margin-right: 1px;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);
+    background-color: rgba(178, 77, 187, 0.8);
+  }
+}
+
+/* Media Queries para celulares (360x800) */
+@media (max-width: 360px) {
+  .contenedor {
+      padding: 20px; /* Reducir el padding */
+      width: 95%; /* Aumentar el ancho del contenedor */
+      max-width: 300px; /* Reducir el ancho máximo */
+  }
+
+  h1 {
+      font-size: 1.5rem; /* Reducir el tamaño del título */
+      margin-bottom: 15px; /* Reducir el margen inferior */
+  }
+
+  .botones {
+      flex-direction: column; /* Cambiar a disposición vertical */
+      gap: 10px; /* Reducir el espacio entre botones */
+  }
+
+  .boton {
+      padding: 8px 20px; /* Reducir el padding de los botones */
+      font-size: 1rem; /* Reducir el tamaño de la fuente */
+  }
+}

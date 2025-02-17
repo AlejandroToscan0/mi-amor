@@ -126,7 +126,6 @@ h1 {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efecto de hover en los botones */
 .btn-cloud:hover {
     background-color: rgba(255, 255, 255, 0);
     color: #000;
@@ -167,4 +166,126 @@ h1 {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(75, 187, 23, 0.603);
     background-color: rgba(178, 77, 187, 0.8);
+}
+
+/* Media Queries para computadoras de 14 pulgadas (1366x768) */
+@media (max-width: 1366px) {
+    .contenedor {
+        padding: 30px; /* Reducir el padding */
+        width: 90%; /* Aumentar el ancho del contenedor */
+        max-width: 600px; /* Aumentar el ancho máximo */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1px; /* Reducir el tamaño del título */
+    }
+
+    .boton {
+        padding: 10px 25px; /* Reducir el padding de los botones */
+        font-size: 1rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .btn-cloud {
+        background: transparent;
+        border: none;
+        color: #333;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: capitalize;
+        width: 100%;
+        padding: 1px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button-container {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .back-button {
+        background: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+        border: none;
+        color: rgb(0, 0, 0);
+        font-size: 0.9em;
+        font-weight: bold;
+        padding: 5px 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+ 
+    .clouds-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Mantiene 3 columnas */
+        gap: 50px; /* Reduce el espacio entre botones */
+        padding: 50px; /* Reduce el padding para evitar que el diseño se rompa */
+    }
+    
+    /* Nubes y botones dentro de la cuadrícula */
+    .cloud {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px 40px;
+        border-radius: 50px;
+        box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+        text-align: center;
+        font-size: 1em;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 150px; /* Evita que los botones sean demasiado pequeños */
+    }
+}
+
+/* Media Queries para celulares (360x800) */
+@media (max-width: 360px) {
+    .contenedor {
+        padding: 10px; /* Reducir el padding */
+        width: 80%; /* Aumentar el ancho del contenedor */
+        max-width: 200px; /* Reducir el ancho máximo */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Reducir el tamaño del título */
+        margin-bottom: 5px; /* Reducir el margen inferior */
+    }
+
+    .botones {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        gap: 5px; /* Reducir el espacio entre botones */
+    }
+
+    .boton {
+        padding: 4px 10px; /* Reducir el padding de los botones */
+        font-size: 1rem; /* Reducir el tamaño de la fuente */
+    }
+    
+    .btn-cloud {
+        background: transparent;
+        border: none;
+        color: #333;
+        font-size: 0.8em;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: capitalize;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn-cloud:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: #000;
+        transform: scale(1.05);
+    }
 }
